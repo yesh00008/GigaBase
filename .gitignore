@@ -1,0 +1,99 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+ENV/
+env/
+
+# PyTorch
+*.pth
+*.pt
+*.ckpt
+checkpoint/
+checkpoints/
+
+# TensorFlow
+*.h5
+*.pb
+saved_model/
+
+# Model weights and large files
+*.bin
+*.safetensors
+*.gguf
+*.ggml
+models/*/weights/
+models/*/checkpoints/
+
+# Datasets (exclude large data files, but keep documentation)
+datasets/*/data/
+datasets/*/*.csv
+datasets/*/*.json
+datasets/*/*.jsonl
+datasets/*/*.parquet
+datasets/*/*.txt
+!datasets/*/README.md
+!datasets/*/*.md
+
+# Logs and outputs
+logs/
+*.log
+output/
+outputs/
+results/
+wandb/
+mlruns/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+*.envrc
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Cache
+.cache/
+cache/
+__pycache__/
+.mypy_cache/
+.ruff_cache/
