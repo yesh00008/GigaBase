@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purestock AI - Text Generation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>🎯 Purestock AI</h2>
+            <p style="font-size: 12px; color: #8e8ea0; margin-top: 5px;">Your Custom Language Model</p>
+        </div>
+        <div class="model-selector" id="model-list-container">
+            <p style="color: #8e8ea0; font-size: 14px; padding: 0 12px;">Loading models...</p>
+        </div>
+        
+        <!-- Model Info Section -->
+        <div class="model-info">
+            <div class="info-section">
+                <h3>📊 Purestock Stats</h3>
+                <div class="stat-item">
+                    <span class="stat-label">Model Name:</span>
+                    <span class="stat-value">Purestock</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Training Samples:</span>
+                    <span class="stat-value">2,603</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Training Epochs:</span>
+                    <span class="stat-value">2</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Status:</span>
+                    <span class="stat-value">✅ Ready</span>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h3>💡 Tips</h3>
+                <ul class="tips-list">
+                    <li>Start sentences and let AI complete them</li>
+                    <li>Use descriptive prompts</li>
+                    <li>Try different topics!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Chat Area -->
+    <div class="main-content">
+        <div class="chat-container" id="chat-container">
+            <div class="welcome-message">
+                <h1>🎯 Purestock AI</h1>
+                <p class="subtitle">Your Custom-Trained Language Model</p>
+                <div class="welcome-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">✍️</div>
+                        <h3>Text Continuation</h3>
+                        <p>Start writing and Purestock completes your thoughts</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Story Generation</h3>
+                        <p>Create narratives and creative content</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧠</div>
+                        <h3>Smart Completions</h3>
+                        <p>Powered by 2,603 diverse training examples</p>
+                    </div>
+                </div>
+                <div class="example-prompts">
+                    <p class="examples-title">Try these examples:</p>
+                    <div class="example-grid">
+                        <button class="example-btn" data-prompt="Artificial intelligence is">Artificial intelligence is</button>
+                        <button class="example-btn" data-prompt="The future of technology">The future of technology</button>
+                        <button class="example-btn" data-prompt="Machine learning can">Machine learning can</button>
+                        <button class="example-btn" data-prompt="In a world where">In a world where</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <div class="input-container">
+                <textarea id="prompt-input" placeholder="Start typing and Purestock will continue your text..." rows="1"></textarea>
+                <button id="send-btn" class="send-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M7 11L12 6L17 11M12 18V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="input-footer">
+                <span class="token-counter" id="token-counter">0 tokens</span>
+                <span class="model-indicator" id="model-indicator">Purestock v1.0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

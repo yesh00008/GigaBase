@@ -1,0 +1,94 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Model files (large binary files)
+models/pretrained/
+models/fine_tuned/
+models/collected_data_trained/
+models/fast_trained/
+*.bin
+*.safetensors
+*.h5
+*.onnx
+*.tflite
+*.mlmodel
+*.pb
+*.pth
+*.pt
+
+# Data files (can be large)
+data/raw/*.txt
+data/processed/*.txt
+data/processed/*.jsonl
+data/downloaded_datasets/
+data/quick_training/
+*.jsonl
+
+# Logs
+*.log
+logs/
+*.tfevents.*
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# pytest
+.pytest_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json

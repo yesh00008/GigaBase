@@ -1,0 +1,50 @@
+{
+  "model_name": "Purestock",
+  "version": "2.0-Deterministic",
+  "base_model": "distilgpt2",
+  "training_samples": 1500,
+  "training_time_seconds": 1407.8686442375183,
+  "epochs": 3,
+  "learning_rate": 3e-05,
+  "batch_size": 8,
+  "max_length": 128,
+  "dataset_stats": {
+    "c4": {
+      "samples": 300,
+      "skipped": 144,
+      "category": "general"
+    },
+    "fineweb": {
+      "samples": 300,
+      "skipped": 233,
+      "category": "general"
+    },
+    "tinystories": {
+      "samples": 300,
+      "skipped": 0,
+      "category": "creative"
+    },
+    "wikipedia": {
+      "samples": 300,
+      "skipped": 2515,
+      "category": "factual"
+    },
+    "fineweb-edu": {
+      "samples": 300,
+      "skipped": 530,
+      "category": "educational"
+    }
+  },
+  "final_train_loss": 2.452752371041262,
+  "mode": "deterministic",
+  "features": [
+    "Instruction-tuned format",
+    "Balanced dataset sampling",
+    "Quality validation (no label noise)",
+    "Early stopping on eval loss",
+    "Lower LR for stability",
+    "Weight decay (anti-overfit)",
+    "Anti-hallucination optimized"
+  ],
+  "timestamp": "2025-10-11T23:54:38.695696"
+}
